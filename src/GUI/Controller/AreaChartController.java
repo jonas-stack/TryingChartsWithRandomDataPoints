@@ -10,11 +10,9 @@ import javafx.scene.control.Button;
 import java.util.Random;
 
 public class AreaChartController {
-    @FXML
-    public Button btnDrawAreaChart;
-    @FXML
-    private javafx.scene.chart.AreaChart<Number, Number> areaChart;
 
+
+    public AreaChart areaChart;
 
     public void drawAreaChart(ActionEvent actionEvent) {
         Axis<Number> xAxis = areaChart.getXAxis();

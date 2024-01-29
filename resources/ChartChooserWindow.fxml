@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller.ChartChooserController">
    <children>
-      <HBox layoutX="102.0" layoutY="178.0">
+      <HBox alignment="CENTER" layoutY="155.0" prefHeight="45.0" prefWidth="643.0">
          <children>
             <Button fx:id="btnGoToLineChart" mnemonicParsing="false" onAction="#goToLineChart" text="Go To LineChart">
                <HBox.margin>
@@ -22,6 +22,16 @@
                </HBox.margin>
             </Button>
             <Button fx:id="btnScatterChart" alignment="CENTER" mnemonicParsing="false" onAction="#goToScatterChart" text="Go To ScatterChart">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnGoToBarChart" mnemonicParsing="false" onAction="#goToBarChart" text="Go To BarChart">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnGoToPieChart" mnemonicParsing="false" onAction="#goToPieChart" text="Go To PieChart">
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </HBox.margin>

@@ -26,32 +26,42 @@ public class ChartChooserController {
     }
 
     public void goToScatterChart(ActionEvent actionEvent) throws IOException {
-        // Creates an FXMLLoader to load the ToDoListWindow
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/ScatterChartWindow.fxml"));
-        // Load the FXML file and get the root node
         Parent root = loader.load();
-
-        // Create a new stage for the ToDoListWindow
         Stage stage = new Stage();
-        stage.setScene(new Scene(root)); // Set the scene to the loaded root
-
-        stage.setTitle("ScatterChart"); // Set the title of the stage
-        stage.initModality(Modality.APPLICATION_MODAL); // Set the modality of the stage to application modal
-        stage.show(); // Display the stage
+        stage.setScene(new Scene(root));
+        stage.setTitle("ScatterChart");
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.show();
     }
 
     public void goToLineChart(ActionEvent actionEvent) throws IOException {
-        // Creates an FXMLLoader to load the ToDoListWindow
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/LineChartWindow.fxml"));
-        // Load the FXML file and get the root node
         Parent root = loader.load();
-
-        // Create a new stage for the ToDoListWindow
         Stage stage = new Stage();
-        stage.setScene(new Scene(root)); // Set the scene to the loaded root
+        stage.setScene(new Scene(root));
+        stage.setTitle("LineChart");
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.show();
+    }
 
-        stage.setTitle("LineChart"); // Set the title of the stage
-        stage.initModality(Modality.APPLICATION_MODAL); // Set the modality of the stage to application modal
-        stage.show(); // Display the stage
+    public void goToBarChart(ActionEvent actionEvent) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/BarChartWindow.fxml"));
+        Parent root = loader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.setTitle("BarChart");
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.show();
+    }
+
+    public void goToPieChart(ActionEvent actionEvent) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/PieChartWindow.fxml"));
+        Parent root = loader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.setTitle("PieChart");
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.show();
     }
 }
